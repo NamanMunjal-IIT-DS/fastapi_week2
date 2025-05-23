@@ -15,8 +15,6 @@ app.add_middleware(
 )
 
 
-app = FastAPI()
-
 DATA_FILE = Path(__file__).parent / "q-vercel-python.json"
 f=open(DATA_FILE, "r")
 data = json.load(f)
