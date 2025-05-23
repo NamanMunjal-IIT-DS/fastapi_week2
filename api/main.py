@@ -13,6 +13,10 @@ f.close()
 global d
 d=data
 
+@app.get("/")
+def root():
+    return {"message": "Welcome to the FastAPI application!"}
+
 @app.get("/marks")
 def get_marks(names: List[str] = Query(...)):
     global d
