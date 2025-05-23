@@ -23,6 +23,6 @@ def get_marks(name: List[str] = Query(...)):
     marks=[]
     for n in name:
         for i in d:
-            if n == i["n"]:
+            if n == i["name"]:
                 marks.append(i["marks"])
     return {"marks":marks}
