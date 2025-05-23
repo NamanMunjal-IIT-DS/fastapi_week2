@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: 24f2001419@ds.study.iitm.ac.in  # ✅ THIS LINE IS REQUIRED
+      - name: 24f2001419@ds.study.iitm.ac.in
         run: echo "Hello, world!"
