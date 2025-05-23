@@ -17,7 +17,7 @@ d=data
 def root():
     return {"message": "Welcome to the FastAPI"}
 
-@app.get("/marks")
+@app.get("/api")
 def get_marks(name: List[str] = Query(...)):
     global d
     marks=[]
