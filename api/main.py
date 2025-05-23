@@ -15,7 +15,7 @@ d=data
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to the FastAPI application!"}
+    return {"message": "Welcome to the FastAPI"}
 
 @app.get("/marks")
 def get_marks(names: List[str] = Query(...)):
