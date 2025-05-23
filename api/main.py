@@ -18,11 +18,11 @@ def root():
     return {"message": "Welcome to the FastAPI"}
 
 @app.get("/marks")
-def get_marks(names: List[str] = Query(...)):
+def get_marks(name: List[str] = Query(...)):
     global d
     marks=[]
-    for name in names:
+    for n in name:
         for i in d:
-            if name == i["name"]:
+            if n == i["n"]:
                 marks.append(i["marks"])
     return {"marks":marks}
