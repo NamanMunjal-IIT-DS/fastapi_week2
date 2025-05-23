@@ -1,8 +1,14 @@
-name: trial
-on: push
+name: Email Step Check
+
+on:
+  push:
+    branches:
+      - main  # or master, whichever you're using
 
 jobs:
   test:
+    runs-on: ubuntu-latest
     steps:
-      - name: 24f2001419@ds.study.iitm.ac.in
+
+      - name: 24f2001419@ds.study.iitm.ac.in  # ✅ THIS LINE IS REQUIRED
         run: echo "Hello, world!"
